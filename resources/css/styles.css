@@ -1,0 +1,15 @@
+/*BASIC*/
+body {
+    font:68.75%/1.25 Tahoma,Arial,Helvetica,sans-serif;
+    background:#fff;
+    color:#404040;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}
+
+strong,b {
+    font-weight:bold;
+}
