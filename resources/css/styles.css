@@ -1,4 +1,9 @@
-/*BASIC*/
+/*------------ BASICO ------------*/
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     font:68.75%/1.25 Tahoma,Arial,Helvetica,sans-serif;
     background:#fff;
@@ -13,3 +18,181 @@ a {
 strong,b {
     font-weight:bold;
 }
+
+strong {
+    font-size: 24px;
+}
+
+.container {
+    width: 1114px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/*------------ TRIANGULO ------------*/
+
+.triangulo { 
+    display: inline-block;
+    margin: 0 5px;
+    height: 1px;
+    width: 1px;
+}
+
+.triangulo-voltar {
+    margin-top: 100px;    
+    border-right: solid 2em #838383;
+    border-top: solid 2em transparent;
+    border-bottom: solid 2em transparent;
+}
+
+.triangulo-voltar:hover {
+    margin-top: 100px;    
+    border-right: solid 2em #034482;
+    border-top: solid 2em transparent;
+    border-bottom: solid 2em transparent;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.triangulo-proximo {
+    margin-top: 100px;    
+    border-left: solid 2em #838383;
+    border-top: solid 2em transparent;
+    border-bottom: solid 2em transparent;
+}
+
+.triangulo-proximo:hover {
+    margin-top: 100px;    
+    border-left: solid 2em #034482;
+    border-top: solid 2em transparent;
+    border-bottom: solid 2em transparent;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+/*------------ VITRINE ------------*/
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 6px;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
+}
+
+.vitrine__titulo {
+    background: #e5f1fb;
+    font-size: 150%;
+    color: #00669c;
+    margin: 0;
+    height: 35px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.vitrine__titulo-small {
+    margin-left: 150px;
+}
+
+.vitrine__referencia {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.vitrine__botao-voltar,
+.vitrine__botao-proximo {
+    width: 40px;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+}
+
+.vitrine__botao-voltar {
+    border-left: 1px solid 
+}
+
+.vitrine__produtos {
+    flex: 1;
+    display: flex;
+    justify-content: center
+}
+
+
+/*------------ PRODUTO ------------*/
+
+.produto {
+    width:  240px;
+    height: 335px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.produto:hover {
+    background: linear-gradient(to bottom, #d7eaf9, #fff);
+}
+
+.produto:hover .produto__img {
+    border: 2px solid #bdd0e0;
+    padding: 0px 20px;
+    padding-top: 10px;
+    background: #fff;
+}
+
+.produto__box-url {
+    padding: 0px 0px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto__img {
+    align-self: center;
+    padding: 0px 20px;
+    padding-top: 10px;
+    background: #fff;
+    border: 2px solid transparent;
+}
+
+img {  
+    width: 180px;
+    height: 180px;
+}
+
+.produto__titulo {
+    font-size: 100%;
+    padding: 0px 13px;
+    margin-bottom: 0;
+    width: 183;
+    align-items: flex-start;
+
+}
+
+.produto__detalhes {
+    display: flex;
+    color: #b70f15;
+    font-size: 100%;
+    font-weight: bold; 
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 13px;
+}
+
+.produto__preco {
+    width: 136;
+    align-items: flex-start;
+    font-weight: 100;
+}
+
+.produto__condicao {
+    font-weight: 100;
+}
+
+
+
+
+
+
+
