@@ -22,13 +22,13 @@ const renderReference = (product) => {
         </div>
     `;
 
-  const removeElements = elms => elms.forEach(el => el.remove());
-
-  removeElements(document.querySelectorAll(".remove"));
-
   const reference = document.querySelector(".shop__reference");
 
   reference.insertAdjacentHTML("afterbegin", markup);
+
+  const removeElements = elms => elms.forEach(el => el.remove());
+
+  removeElements(document.querySelectorAll(".remove"));
 };
 
 // Create element for product
@@ -61,6 +61,10 @@ const renderProduct = (product) => {
   const productList = document.querySelector(".shop__products");
 
   productList.insertAdjacentHTML("afterbegin", markup);
+
+  const removeElements = elms => elms.forEach(el => el.remove());
+
+  removeElements(document.querySelectorAll(".remove"));
 };
 
 // Create element button (previous or next)
