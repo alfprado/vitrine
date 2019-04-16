@@ -22,6 +22,10 @@ const renderReference = (product) => {
         </div>
     `;
 
+  const removeElements = elms => elms.forEach(el => el.remove());
+
+  removeElements(document.querySelectorAll(".remove"));
+
   const reference = document.querySelector(".shop__reference");
 
   reference.insertAdjacentHTML("afterbegin", markup);
@@ -42,6 +46,7 @@ const renderProduct = (product) => {
                 <p class="product__title">${product.name}</p>
 
                 <span class="product__detail">
+                    <span class="product__old-price ${product.oldPrice ? "" : "remove"}">De: ${product.oldPrice}</span>
                     <span class="product__price">Por: <strong>${product.price}</strong></span>
                     <span>
                         ${product.productInfo.paymentConditions}
