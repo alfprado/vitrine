@@ -1,6 +1,8 @@
 
 import * as productView from "./views/productView";
 import Repository from "./rep/Repository";
+import styles from "../css/styles.css";
+import normalize from "../css/normalize.css";
 
 const state = {};
 
@@ -12,6 +14,7 @@ const loadData = async () => {
   productView.renderResults(state.products.recommendation);
   productView.renderRef(state.products.reference.item);
 };
+
 
 const previous = document.querySelector(".shop__btn-previous");
 const next = document.querySelector(".shop__btn-next");
